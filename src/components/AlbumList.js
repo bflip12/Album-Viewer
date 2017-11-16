@@ -1,6 +1,6 @@
 //Import libraries to help build a Component
 import React from 'react';
-import { View } from 'react-native';
+import { ScrollView } from 'react-native';
 import axios from 'axios';
 import AlbumDetail from './AlbumDetail';
 
@@ -27,27 +27,9 @@ export default class AlbumList extends React.Component {
     console.log('testing state');
     console.log(this.state);
     return (
-      <View>
+      <ScrollView>
         {this.renderAlbums()}
-      </View>
+      </ScrollView>
     );
   }
 }
-//
-// const styles = StyleSheet.create({
-//   viewStyle: {
-//     backgroundColor: '#F8F8F8',
-//     alignItems: 'center',
-//     justifyContent: 'center',
-//     height: 60,
-//     paddingTop: 15,
-//     shadowColor: '#000000',
-//     shadowOffset: { width: 0, height: 2 },
-//     shadowOpacity: 0.4,
-//     elevation: 2,
-//     position: 'relative',
-//   },
-//   textStyle: {
-//     fontSize: 20
-//   }
-// });
